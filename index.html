@@ -8,17 +8,20 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <script src="beep.js"></script>
-    beep();
   </head>
 
   <body>
     <h1>Play Guitar Beats</h1>
-    <button type="button" id="myButton" data-loading-text="Play..."
-    class="btn btn-primary" autocomplete="off" onClick="beep()">
+    <button type="button" id="ButtonPlay" data-loading-text="Play..."
+    class="btn btn-primary" autocomplete="off" onClick="playBeeps()">
       Play
     </button>
+    <button type="button" id="ButtonStop" data-loading-text="Stop..."
+    class="btn btn-primary" autocomplete="off" onClick="stopBeep()">
+      Stop
+    </button>
 
-<div class="btn-toolbar" role="toolbar" aria-label="123">
+<div class="btn-toolbar" role="toolbar" aria-label="1234">
 <div class="btn-group1" role="group" aria-label="1">
   <button type="button" class="btn btn-default">1</button>
   <button type="button" class="btn btn-default">2</button>
@@ -46,21 +49,19 @@
 </div>
 <div class="btn-group" data-toggle="buttons">
   <label class="btn btn-primary active">
-    <input type="checkbox" autocomplete="off" checked> Checkbox 1
+    <input type="checkbox" autocomplete="off" checked> 1
   </label>
   <label class="btn btn-primary">
-    <input type="checkbox" autocomplete="off"> Checkbox 2
+    <input type="checkbox" autocomplete="off"> 2
   </label>
   <label class="btn btn-primary">
-    <input type="checkbox" autocomplete="off"> Checkbox 3
+    <input type="checkbox" autocomplete="off"> 3
+  </label>
+  <label class="btn btn-primary">
+    <input type="checkbox" autocomplete="off"> 4
   </label>
 </div>
-<script type="text/javascrtipt">
-    function playBeat () {
-      source.start(0);
-    //  source.stop(1);
-    }
-</script>
+
   </body>
 
 </html>
